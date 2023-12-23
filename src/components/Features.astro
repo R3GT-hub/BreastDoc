@@ -1,0 +1,81 @@
+---
+import { Icon } from 'astro-icon'
+---
+<section aria-labelledby="Featureone" id="overview" class="relative scroll-mt-24">
+  <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto relative py-12 lg:pt-24">
+    <div>
+      <div class="max-w-full">
+        <span
+          class="text-transparent bg-clip-text font-medium tracking-widest bg-gradient-to-r from-emerald-700 via-cyan-500 to-indigo-700 dark:from-cyan-400 dark:via-teal-500 dark:to-indigo-500 text-s uppercase"
+          >Overview</span
+        >
+        <p class="text-3xl mt-4 font-normal text-vulcan-700 dark:text-white">
+          The best database, augmented.
+           <!-- to run <span class="whitespace-nowrap">your application</span>. -->
+        </p>
+        <p class="max-w-full mt-4 text-lg text-gray-600 dark:text-slate-400">
+          Omnigres is a collection of Postgres extensions and tools crafted to elevate its capabilities.
+        </p>
+      </div>
+    </div>
+    <div>
+      <ul class="grid grid-cols-1 gap-4 mt-6 list-none lg:gap-24 md:grid-cols-2 lg:mt-12" role="list">
+
+        <li>
+          <div>
+            <div class="text-white font-normal mr-2 bg-gradient-to-r from-sky-400 to-indigo-500 w-8 h-8 md:w-12 md:h-12 flex  md:mb-4 mb-2 rounded-xl p-2">
+            <Icon  name="bi:stack" />
+          </div> 
+          <h3 class="mb-2 md:text-2xl text-xl font-bold text-gray-600 dark:text-white">Built-in Web Stack</h3> 
+          <p class="text-gray-600 dark:text-gray-400">
+            Application logic
+            is directly connected to its data, both logically and physically.
+            Instead of translating and relaying requests back and forth between different services,
+            the response comes straight from the database without additional network roundtrips.
+            <span class="font-semibold text-gray-600/90 dark:text-white/90">Batteries included.</span>
+          </p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="text-white font-normal mr-2 bg-gradient-to-r from-sky-400 to-indigo-500 w-8 h-8 md:w-12 md:h-12 flex md:mb-4 mb-2 rounded-xl p-2">
+            <Icon  name="cib:azure-pipelines" />
+          </div> 
+          <h3 class="mb-2 md:text-2xl text-xl font-bold text-gray-600 dark:text-white">Reactive Data Pipelines</h3> 
+          <p class="text-gray-600 dark:text-gray-400">
+            You can make your data flow
+            through transformations and enrichment. This gives you the freedom to build complex applications
+            and integrate with <span class="font-semibold text-gray-600/90 dark:text-white/90">AI models</span>, all without losing track of what's going on.
+            The data is no longer static.
+          </p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="text-white font-normal mr-2 bg-gradient-to-r from-sky-400 to-indigo-500 w-8 h-8 md:w-12 md:h-12 flex md:mb-4 mb-2 rounded-xl p-1">
+            <Icon  name="mdi:language" />
+          </div> 
+          <h3 class="mb-2 md:text-2xl text-xl font-bold text-gray-600 dark:text-white">Bring your language</h3> 
+          <p class="text-gray-600 dark:text-gray-400">
+            Embrace programming freedom with Omnigres. Our platform offers a diverse range of supported languages, allowing your team to work in their <span class="font-semibold text-gray-600/90 dark:text-white/90">areas of expertise</span>, enhancing code quality and fostering a collaborative environment where developers excel.
+          </p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="text-white font-normal mr-2 bg-gradient-to-r from-sky-400 to-indigo-500 w-8 h-8 md:w-12 md:h-12 flex md:mb-4 mb-2 rounded-xl p-1">
+            <Icon  name="mdi:sparkles" />
+          </div> 
+          <h3 class="mb-2 md:text-2xl text-xl font-bold text-gray-600 dark:text-white">Developer Experience</h3> 
+          <p class="text-gray-600 dark:text-gray-400">
+            Our relentless commitment to Development, Debugging, and Deployment Experience (D3X) stands as a unique and unparalleled benefit. With <span class="font-semibold text-gray-600/90 dark:text-white/90">D3X at forefront</span> of our focus, we prioritize your experience at every stage of your software project.
+          </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

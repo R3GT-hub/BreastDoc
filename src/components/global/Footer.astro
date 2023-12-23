@@ -1,0 +1,94 @@
+---
+import BlurLight from "../assets/BlurLight.astro";
+import Blurgradientleft from "../assets/Blurgradientleft.astro";
+import { Icon } from 'astro-icon';
+---
+
+<footer
+  aria-labelledby="footer"
+  id="footer "
+  class="dark:bg-vulcan-900 bg-cyan-50/60 relative"
+>
+  <div class="dark:visible invisible">
+    <Blurgradientleft />
+  </div>
+  <div class="dark:invisible visible">
+    <BlurLight />
+  </div>
+  <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-24 relative">
+    <div
+      class="flex md:flex-row md:justify-around items-start md:items-center flex-col gap-8"
+    >
+      <div class="text-vulcan-700 dark:text-white md:mr-16">
+        <div class="inline-flex items-center gap-3">
+          <svg id="Layer_2" class="h-5" id="logo-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 158" ><defs ><style> .cls-1 { fill: none; stroke: #3fa9f5; stroke-miterlimit: 10; stroke-width: 20px; } </style></defs ><g id="Layer_1-2" ><circle class="cls-1" cx="79" cy="79" r="69"></circle></g ></svg >
+          <p class="text-2xl">Humans of Postgres </p>
+        </div>
+        <p class="mt-2 text-sm text-gray-600 dark:text-slate-400">
+          <span
+            class="mt-6 text-sm font-normal text-gray-600 dark:text-slate-400"
+          >
+            &copy; 2023 Humans of Postgres <br /> All rights reserved
+          </span>
+        </p>
+      </div>
+      <div class="flex flex-row gap-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8 items-start">
+          <div>
+            <h3 class="text-vulcan-700 dark:text-white">Navigation</h3>
+            <ul role="list" class="mt-2 space-y-2">
+              <li>
+                <a
+                  class="text-sm text-gray-600 dark:text-slate-400 hover:text-vulcan-900 dark:hover:text-white inline-flex items-center"
+                  href="#overview">Overview</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.omnigres.org"
+                  class="text-sm text-gray-600 dark:text-slate-400 hover:text-vulcan-900 dark:hover:text-white"
+                >
+                  Documentation
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h3 class="text-vulcan-700 dark:text-white">Links</h3>
+            <ul role="list" class="mt-2 space-y-2">
+              <li>
+                <a
+                  href="https://github.com/omnigres"
+                  class="text-sm text-gray-600 dark:text-slate-400 hover:text-vulcan-900 dark:hover:text-white"
+                >
+                  Report a bug
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Omnigres" 
+                   class="text-sm text-gray-600 dark:text-slate-400 hover:text-vulcan-900 dark:hover:text-white">
+                  @Humans of Postgres
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:fcjcic frjcic gap-4  md:ml-0">
+             <a
+          class=" text-vulcan-700 dark:text-white font-normal  dark:hover:text-white/50 hover:text-vulcan-900 w-9 h-9 flex transition-all hover:scale-105"
+          href="https://discord.omnigr.es"
+        ><Icon name="mdi:discord" /></a>
+        <a
+        class="text-vulcan-700 dark:text-white font-normal  dark:hover:text-white/50 hover:text-vulcan-900 w-9 h-9 flex transition-all hover:scale-105"
+        href="https://github.com/omnigres/omnigres"
+      ><Icon  name="mdi:github" /></a>
+        <a
+        class="text-vulcan-700 dark:text-white font-normal  dark:hover:text-white/50 hover:text-vulcan-900 w-9 h-9 flex transition-all hover:scale-105"
+        href="https://x.com/omnigres"
+      ><Icon  name="mdi:twitter" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row justify-center items-center gap-6"></div>
+  </div>
+</footer>

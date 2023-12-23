@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
+
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<AstroSeo
+  title="Home"
+  description="Omnigres"
+  canonical="https://omnigres.com"
+  twitter={{
+    handle: "@Omnigres",
+    site: "@omnigres",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <Hero />
+  <Features />
+</BaseLayout>

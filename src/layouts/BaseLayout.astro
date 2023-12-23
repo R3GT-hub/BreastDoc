@@ -1,0 +1,16 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Navigation from "../components/global/Navigation.astro";
+import Footer from "../components/global/Footer.astro";
+---
+
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head> <BaseHead /></head>
+  <body class="no-scrollbar dark:bg-vulcan-900 bg-cyan-50/60 selection:bg-cyan-500 selection:text-white dark:selection:bg-indigo-500">
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
+</html>

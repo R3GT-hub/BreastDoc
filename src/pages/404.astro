@@ -1,0 +1,15 @@
+---
+import SplashScreenLayout from "../layouts/SplashScreenLayout.astro";
+import Error404 from "./Error404.astro";
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<AstroSeo
+  title="404"
+/>
+<SplashScreenLayout>
+  <Error404 />
+</SplashScreenLayout>

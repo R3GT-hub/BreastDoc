@@ -1,0 +1,230 @@
+$delayMode: 2;
+$dotColor: hsl(0, 0%, 100%);
+$ruinIllusion: false;
+$color-indigo: rgb(79, 70, 229);
+$color-indigo-shade: hsl(205, 100%, 46%);
+
+:root {
+  --borderColor: rgb(79, 70, 229);
+  --ringColor: hsl(205, 100%, 46%);
+}
+
+/* Dark mode */
+:root[data-theme='dark'] {
+  --borderColor:rgb(79, 70, 229) ;
+  --ringColor:hsl(205, 100%, 46%);
+}
+
+/* Additional styles for light mode */
+:root[data-theme='light'] {
+  --borderColor:rgb(56 189 248);
+  --ringColor:rgb(79, 70, 229);
+}
+
+* {
+  position: relative;
+}
+
+
+.middleCircle {
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+  width: 350px;
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+  border-radius: 50%;
+}
+
+.middleCircle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -10px;
+  left: -10px;
+  border: solid 10px var(--borderColor);
+  border-radius: 50%;
+}
+
+.middleCircle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: calc(100% + 20px);
+  width: calc(100% + 20px);
+  top: -20px;
+  left: -20px;
+  border: solid 10px var(--ringColor);
+  border-radius: 50%;
+}
+
+.backCircle, .frontCircle {
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top: calc(0%);
+  @if $ruinIllusion {
+    animation-name: spin, ruinIllusion; 
+  } @else {
+    animation-name: spin;
+  }
+  animation-duration: 12s, 6s;
+  animation-timing-function: linear, linear;
+  animation-iteration-count: infinite, infinite;
+}
+
+.frontCircle {
+  animation-delay: 0s, 3s;
+}
+
+.smallCircle {
+  position: absolute;
+  width: 60px;
+  height: 220px;
+  left: calc(50% - 30px);
+  top: -45px;
+  transform-origin: 50% 100%;
+}
+
+.smallCircle::after {
+  content: '';
+  display: block;
+  height: 40px;
+  width: 40px;
+  border: solid 10px var(--borderColor);
+  background-color: $dotColor;
+  border-radius: 50%;
+}
+
+.backCircle .smallCircle::after {
+  animation: move 1s ease-in-out alternate infinite;
+}
+
+.frontCircle .smallCircle::after {
+  animation: move 1s ease-in-out alternate infinite, opacity 2s linear infinite;
+}
+
+@for $i from 1 through 12 {
+  .smallCircle:nth-child(#{$i}) {
+    transform: rotate(#{30 * $i}deg);
+  }
+  
+  .smallCircle:nth-child(#{$i})::after {
+    animation-delay: #{($i / $delayMode) - 100}s;
+  }
+
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-50px) scale(1.5);
+  }
+  
+  to {
+    transform: translateY(50px) scale(1);
+  }
+}
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  
+  49% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  99% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from { 
+    transform: rotate(0deg)
+  }
+  
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ruinIllusion {
+  0% {
+    opacity: 0%;
+  }
+  45% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.smallCircle::after {
+  content: attr(data-text); // Add this line to display content from the 'data-text' attribute
+  display: block;
+  height: 40px;
+  width: 40px;
+  border: solid 10px ;
+  background-color: $dotColor;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: $dotColor;
+  font-weight: bold;
+}
+
+.centralText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;  // Adjust the font size as needed
+  color: white;     // Adjust the text color as needed
+  font-weight: bold;
+  animation: pulse 2s ease-in-out infinite;  // Adjust the animation duration as needed
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.smallCircle::after {
+  content: '';
+  display: block;
+  height: 40px;
+  width: 40px;
+  border: solid 10px var(--borderColor);
+  background-color: $dotColor;
+  border-radius: 50%;
+  background-image: url(attr(data-image)); // Load image from data-image attribute
+  background-size: cover; // Adjust the background size as needed
+}

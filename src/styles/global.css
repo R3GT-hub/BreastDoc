@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --astro-code-color-text: #1ab8d2;
+  --astro-code-color-background: #1a1c2b;
+  --astro-code-token-constant: #ffffff70;
+  --astro-code-token-string: #42517e;
+  --astro-code-token-comment: #ffffff80;
+  --astro-code-token-keyword: #ffffff70;
+  --astro-code-token-parameter: #1ab8d2;
+  --astro-code-token-function: #8e6fe9;
+  --astro-code-token-string-expression: #ffffff;
+  --astro-code-token-punctuation: #ffffff80;
+  --astro-code-token-link: #ffffff;
+}
+
+@layer components {
+  .frjcic {
+    @apply flex flex-row justify-center items-center;
+  }
+
+  .fcjcic {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+
+  scrollbar-width: none; /* Firefox */
+}
