@@ -26,7 +26,7 @@ module.exports = {
           opacity: 0,
         },
         to: {
-          opacity: 1,
+          opacity: 0.99,
         },
       },
       scroller3: {

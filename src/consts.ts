@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Humans of Postgres';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const NAME="BreastDoc"

@@ -5,6 +5,7 @@ import compress from "astro-compress";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import alpine from '@astrojs/alpinejs';
+// import alpine
 // https://astro.build/config
 export default defineConfig({
   markdown: {
