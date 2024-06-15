@@ -112,7 +112,7 @@ $color-indigo-shade: hsl(205, 100%, 46%);
   }
   
   .smallCircle:nth-child(#{$i})::after {
-    animation-delay: #{($i / $delayMode) - 100}s;
+    animation-delay: #{calc($i / $delayMode) - 100}s;
   }
 
 }

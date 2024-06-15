@@ -13,4 +13,14 @@ const blog = defineCollection({
 	}),
 });
 
+const treatments = defineCollection({
+	schema: z.object({
+		title: z.string(),
+		id:z.number().optional(),
+		description: z.string(),
+		tags: z.array(z.string()).optional(),
+		heroImage: z.string().optional(),
+	}),
+});
+
 export const collections = { blog };
