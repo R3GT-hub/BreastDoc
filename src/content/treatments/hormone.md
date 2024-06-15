@@ -3,7 +3,7 @@ title: "Hormone Therapy"
 id: "4"
 description: "Blocks hormones that fuel cancer growth."
 tags: "hormone therapy, breast cancer"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "https://www.endocrine.org/-/media/endocrine/images/patient-engagement-webpage/condition-page-images/hormones/hormones_and_endocrine_function_1796x943.jpg"
 ---
 
 **Hormone Therapy** blocks or lowers the levels of hormones that fuel some types of breast cancer. Common medications include Tamoxifen and Aromatase inhibitors.

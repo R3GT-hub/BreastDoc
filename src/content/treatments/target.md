@@ -3,7 +3,7 @@ title: "Targeted Therapy"
 id: "5"
 description: "Targets specific molecules involved in cancer growth."
 tags: "targeted therapy, breast cancer"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "https://cdn.myhealthteams.com/graphic/633dc8e67dea256fc47c7146/woriginal/Targeted_Therapy_for_Breast_Cancer-e39d94d33340e6b4ce96e269957684c6.webp?1678757508"
 ---
 
 **Targeted Therapy** focuses on specific molecules involved in cancer growth and spread. Examples include Herceptin for HER2-positive breast cancer.

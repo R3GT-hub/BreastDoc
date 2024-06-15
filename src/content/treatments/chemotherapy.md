@@ -3,7 +3,7 @@ title: "Chemotherapy"
 id: "3"
 description: "Use of drugs to kill cancer cells."
 tags: "chemotherapy, breast cancer"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "https://images.everydayhealth.com/images/cancer/what-is-chemotherapy-722x406.jpg?sfvrsn=912570a9_1"
 ---
 
 **Chemotherapy** involves the use of drugs to kill rapidly dividing cancer cells. It can be used before surgery to shrink tumors or after surgery to eliminate remaining cancer cells.

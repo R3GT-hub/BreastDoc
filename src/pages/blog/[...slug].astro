@@ -21,18 +21,22 @@ const apiKey = import.meta.env.OPENAI_API_KEY;
     <Content />
   </div>
   <!-- Chatbox -->
-  <div class="chatbox">
-    <form id="chatForm">
-      <input
-        type="text"
-        id="chatInput"
-        placeholder="Ask a question..."
-        required
-      />
-      <button type="submit">Send</button>
-    </form>
-    <div id="chatOutput"></div>
-  </div>
+  <div class="chatbox mt-[50px]">
+  <h1>Ask Your Doubts!</h1>
+  <form id="chatForm">
+    <input
+      type="text"
+      id="chatInput"
+      placeholder="Ask a question..."
+      required
+      class="w-full rounded-[8px] p-2"
+    />
+    <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded-[8px] transition-all hover:border-pink-700 hover:border-2">
+      Send
+    </button>
+  </form>
+  <div id="chatOutput"></div>
+</div>
 </BlogPost>
 
 <script>
@@ -77,3 +81,43 @@ Question: ${question}`;
     }
   });
 </script>
+<style>
+  .chatbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  #chatOutput {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  #chatInput {
+    flex-grow: 1;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    border: 2px solid #f9f9f9;
+    color:white;
+  }
+
+  button:hover{
+    color:red;
+    background:white;
+  }
+</style>

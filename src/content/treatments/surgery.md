@@ -1,7 +1,7 @@
 ---
 title: "Surgery (Lumpectomy, Mastectomy)"
 description: "Surgical removal of breast tissue to treat cancer."
-heroImage: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2478&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+heroImage: "https://media.istockphoto.com/id/1215880332/photo/a-surgeons-team-in-uniform-performs-an-operation-on-a-patient-at-a-cardiac-surgery-clinic.jpg?s=612x612&w=0&k=20&c=fRuUTSy_j2MMPI8yXuROJe4A8LwObO1-d8wSaHouSVI="
 ---
 
 **Surgery** is a common treatment for breast cancer and involves the removal of cancerous tissue from the breast. The two main types are **lumpectomy** (removing the tumor and a small margin of surrounding tissue) and **mastectomy** (removing the entire breast).

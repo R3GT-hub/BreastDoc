@@ -1,7 +1,7 @@
 ---
 title: "Radiation Therapy"
 description: "Using high-energy rays to kill cancer cells."
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "https://www.iaea.org/sites/default/files/styles/original_image_size/public/radiotherapyv3cover.jpg?itok=XzQHqTpC"
 ---
 
 **Radiation Therapy** uses high-energy rays to target and kill cancer cells. It is often used after surgery to eliminate any remaining cancer cells and reduce the risk of recurrence.
