@@ -2,7 +2,7 @@
   "name": "a",
   "type": "module",
   "version": "0.0.1",
-  "homepage": ".",
+  "homepage": "https://breast-doc.vercel.app/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
