@@ -31,8 +31,7 @@ const posts = await getCollection("treatments");
                 <div>
                   <a href={`/treatments/${post.slug}/`} class="no-underline">
                     <img
-                      width={720}
-                      height={360}
+                      class="hero-image"
                       src={post.data.heroImage}
                       alt=""
                     />
@@ -48,3 +47,12 @@ const posts = await getCollection("treatments");
     </div>
   </section>
 </BaseLayout>
+
+
+<style>
+.hero-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+</style>
