@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"treatments">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
@@ -30,18 +30,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         <p class="lg:text-6xl text-3xl text-center my-8 font-bold z-50">
           {title}
         </p>
-        <div class="text-center leading-normal mb-4">
-          <div class="date">
-            <FormattedDate date={pubDate} />
-            {
-              updatedDate && (
-                <div class="last-updated-on">
-                  Last updated on <FormattedDate date={updatedDate} />
-                </div>
-              )
-            }
-          </div>
-        </div>
       </div>
     </div>
     <div class="max-w-full px-8 md:px-12 lg:px-32 mx-auto pb-32 pt-12 relative">

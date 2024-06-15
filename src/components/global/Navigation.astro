@@ -1,46 +1,63 @@
 ---
-import { Icon } from 'astro-icon';
-import Dark from '../Dark.astro';
+import { Icon } from "astro-icon";
+import Dark from "../Dark.astro";
 ---
 
 <section
   aria-labelledby="navigation"
   id="navigation"
-  class="overflow-hidden relative bg-vulcan-700/0 border-b border-white/5 backdrop-blur-2xl lg:bg-vulcan-700/0 z-50 fixed w-full">
+  class="overflow-hidden relative bg-vulcan-700/0 border-b border-white/5 backdrop-blur-2xl lg:bg-vulcan-700/0 z-50 fixed w-full"
+>
   <div class="w-full mx-auto relative">
     <div
       x-data="{ open: false }"
-      class="relative flex flex-col w-full py-5 px-8 mx-auto md:items-center md:justify-between md:flex-row md:px-12 lg:px-32">
+      class="relative flex flex-col w-full py-5 px-8 mx-auto md:items-center md:justify-between md:flex-row md:px-12 lg:px-32"
+    >
       <div
-        class="flex flex-row items-center justify-between w-full text-vulcan-700 dark:text-white lg:justify-start">
+        class="flex flex-row items-center justify-between w-full text-vulcan-700 dark:text-white lg:justify-start"
+      >
         <a href="/" class="lg:pr-8">
-          <div class="inline-flex items-center gap-3 transition-all hover:scale-105">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/1ncQZ0h/breastdoclogo.png" class="h-[50px] w-[50px]" alt="breastdoclogo" border="0"></a>
+          <div
+            class="inline-flex items-center gap-3 transition-all hover:scale-105"
+          >
+            <img
+              src="https://i.ibb.co/1ncQZ0h/breastdoclogo.png"
+              class="h-[50px] w-[50px]"
+              alt="breastdoclogo"
+              border="0"
+            />
             <p class="text-2xl">BreastDoc</p>
           </div>
         </a>
         <div class="flex-grow"></div>
         <nav
           :class="{'flex': open, 'hidden': !open}"
-          class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+          class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row"
+        >
           <a
             class="px-2 lg:px-6 py-2 md:px-3 text-md text-vulcan-700 dark:text-white font-normal dark:hover:text-white/50 hover:text-vulcan-900 transition-all hover:scale-105"
-            href="/blog">Blog</a>
-            <a
-    class="px-2 lg:px-6 py-2 md:px-3 text-md text-vulcan-700 dark:text-white font-normal dark:hover:text-white/50 hover:text-vulcan-900 transition-all hover:scale-105"
-    href="/questionnaire">Questionnaire</a>
+            href="/blog">Blog</a
+          >
+          <a
+            class="px-2 lg:px-6 py-2 md:px-3 text-md text-vulcan-700 dark:text-white font-normal dark:hover:text-white/50 hover:text-vulcan-900 transition-all hover:scale-105"
+            href="/treatments">Treatments</a
+          >
+          <a
+            class="px-2 lg:px-6 py-2 md:px-3 text-md text-vulcan-700 dark:text-white font-normal dark:hover:text-white/50 hover:text-vulcan-900 transition-all hover:scale-105"
+            href="/questionnaire">Questionnaire</a
+          >
           <a
             class="text-vulcan-700 dark:text-white font-normal mt-2 sm:mt-0 mr-2 ml-4 dark:hover:text-white/50 hover:text-vulcan-900 w-[24px] h-[24px] flex transition-all hover:scale-105"
-            href="#"
-          ><Icon name="mdi:discord" /></a>
+            href="#"><Icon name="mdi:discord" /></a
+          >
           <a
             class="text-vulcan-700 dark:text-white font-normal mt-2 sm:mt-0 mr-2 ml-4 sm:ml-0 dark:hover:text-white/50 hover:text-vulcan-900 w-[24px] h-[24px] flex transition-all hover:scale-105"
-            href="#"
-          ><Icon name="mdi:github" /></a>
+            href="#"><Icon name="mdi:github" /></a
+          >
           <a
             class="text-vulcan-700 dark:text-white font-normal mt-2 sm:mt-0 mr-2 ml-4 sm:ml-0 dark:hover:text-white/50 hover:text-vulcan-900 w-[24px] h-[24px] flex transition-all hover:scale-105"
-            href="#"
-          ><Icon name="mdi:twitter" /></a>
+            href="#"><Icon name="mdi:twitter" /></a
+          >
         </nav>
       </div>
     </div>

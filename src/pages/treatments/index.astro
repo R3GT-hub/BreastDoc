@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+type Props = CollectionEntry<"treatments">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const posts = await getCollection("treatments");
+---
+
+<BaseLayout pageTitle={title}>
+  <svg class="dark:visible invisible absolute blur-3xl -right-4 top-0 dark:opacity-80 opacity-20" width="30%" height="70%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" > <g clip-path="url(#clip0_17_60)"> <g filter="url(#filter0_f_17_60)"> <path d="M128.6 0H0V322.2L332.5 211.5L128.6 0Z" fill="#FF69B4"></path> <!-- Pink shade --> <path d="M0 322.2V400H240H320L332.5 211.5L0 322.2Z" fill="#FF1493" ></path> <!-- Deep pink --> <path d="M320 400H400V78.75L332.5 211.5L320 400Z" fill="#D8BFD8"></path> <!-- Thistle (light pink) --> <path d="M400 0H128.6L332.5 211.5L400 78.75V0Z" fill="#4B0082"></path> <!-- Indigo --> </g> </g> <defs> <filter id="filter0_f_17_60" x="-159.933" y="-159.933" width="719.867" height="719.867" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" > <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend> <feGaussianBlur stdDeviation="79.9667" result="effect1_foregroundBlur_17_60"></feGaussianBlur> </filter> </defs> </svg> <svg class="visible dark:invisible absolute blur-3xl -right-4 top-0 opacity-50" width="30%" height="70%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" > <g clip-path="url(#clip0_17_60)"> <g filter="url(#filter0_f_17_60)"> <path d="M128.6 0H0V322.2L332.5 211.5L128.6 0Z" fill="#FF69B4"></path> <!-- Pink shade --> <path d="M0 322.2V400H240H320L332.5 211.5L0 322.2Z" fill="#FF1493" ></path> <!-- Deep pink --> <path d="M320 400H400V78.75L332.5 211.5L320 400Z" fill="#D8BFD8"></path> <!-- Thistle (light pink) --> <path d="M400 0H128.6L332.5 211.5L400 78.75V0Z" fill="#4B0082"></path> <!-- Indigo --> </g> </g> <defs> <filter id="filter0_f_17_60" x="-159.933" y="-159.933" width="719.867" height="719.867" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" > <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend> <feGaussianBlur stdDeviation="79.9667" result="effect1_foregroundBlur_17_60"></feGaussianBlur> </filter> </defs> </svg>
+  <section class="relative">
+    <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 relative">
+      <div
+        class="text-transparent mb-10 mx-auto bg-clip-text text-6xl tracking-widest bg-gradient-to-r from-emerald-700 via-cyan-500 to-indigo-700 dark:from-cyan-400 dark:via-teal-500 dark:to-indigo-500 leading loose uppercase"
+      >
+        Treatment Options
+      </div>
+      <div
+        class="max-w-4xl mx-auto prose dark:prose-blockquote:border-l-white prose-blockquote:border-l-slate-200 dark:prose-a:text-cyan-400/90 prose-a:text-cyan-600 dark:hover:prose-a:text-white hover:prose-a:text-vulcan-700 prose-headings:font-normal dark:prose-headings:text-white prose-headings:text-vulcan-700 prose-li:marker:text-cyan-500 dark:text-slate-400 text-gray-600 dark:prose-code:text-white prose-code:vulcan-700 prose-blockquote:text-white/70"
+      >
+        <section>
+          <div
+            class="grid md:grid-cols-3 grid-cols-1 mx-auto place-content-evenly justify-self-center content-around gap-8"
+          >
+            {
+              posts.map((post) => (
+                <div>
+                  <a href={`/treatments/${post.slug}/`} class="no-underline">
+                    <img
+                      width={720}
+                      height={360}
+                      src={post.data.heroImage}
+                      alt=""
+                    />
+                    <h4>{post.data.title}</h4>
+                    <p></p>
+                  </a>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
