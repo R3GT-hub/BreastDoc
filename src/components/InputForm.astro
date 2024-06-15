@@ -5,10 +5,11 @@ const handleClick = () => {
   const name = formData.get('name');
   const content = formData.get('content');
   const timeToRead = formData.get('timeToRead');
+  const image = formData.get('image'); // Get the uploaded image file
 
   // Store data in localStorage (client-side operation)
   if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('blogData', JSON.stringify({ title, name, content, timeToRead }));
+    localStorage.setItem('blogData', JSON.stringify({ title, name, content, timeToRead, image }));
   }
 
   // Navigate on the client side
@@ -38,6 +39,11 @@ const handleClick = () => {
     <label for="timeToRead">Date:</label>
     <input type="date" id="timeToRead" name="timeToRead" required />
   </div>
+  
+  <div>
+    <label for="image">Upload Image:</label>
+    <input type="file" id="image" name="image" accept="image/*" />
+  </div>
 
   <div class="submit-button" onclick={() => handleClick()}>
     Submit
@@ -49,7 +55,7 @@ const handleClick = () => {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width:600px;
+    width: 600px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
@@ -68,12 +74,12 @@ const handleClick = () => {
   textarea {
     width: 100%;
     padding: 0.5rem;
-    
     border-radius: 8px;
   }
 
   .submit-button {
-    align-self: flex-center;
+    width:100%;
+    align-self: center;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 8px;
