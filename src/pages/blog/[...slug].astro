@@ -1,20 +1,79 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import BlogPost from "../../layouts/BlogPost.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
-type Props = CollectionEntry<'blog'>;
+type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+const apiKey = import.meta.env.OPENAI_API_KEY;
 ---
 
 <BlogPost {...post.data}>
-	<Content />
+  <div id="blogContent">
+    <Content />
+  </div>
+  <!-- Chatbox -->
+  <div class="chatbox">
+    <form id="chatForm">
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="Ask a question..."
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+    <div id="chatOutput"></div>
+  </div>
 </BlogPost>
+
+<script>
+  const chatForm = document.getElementById("chatForm");
+  const chatInput = document.getElementById("chatInput");
+  const chatOutput = document.getElementById("chatOutput");
+  const blogContent = document.getElementById("blogContent");
+
+  chatForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const question = chatInput.value.trim();
+    if (question) {
+      chatOutput.innerHTML += `<div class="question">You: ${question}</div>`;
+      chatInput.value = "";
+
+      const content = blogContent.innerText;
+      const prompt = `You are an expert doctor. Please take the following content into account and answer the question in simple English:
+
+${content}
+
+Question: ${question}`;
+
+      const response = await fetch(
+        "https://api.openai.com/v1/chat/completions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer ${apiKey}",
+          },
+          body: JSON.stringify({
+            model: "gpt-3.5-turbo",
+            messages: [{ role: "system", content: prompt }],
+            max_tokens: 500,
+          }),
+        }
+      );
+
+      const data = await response.json();
+      const answer = data.choices[0].message.content;
+      chatOutput.innerHTML += `<div class="answer">Claude: ${answer}</div>`;
+    }
+  });
+</script>

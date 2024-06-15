@@ -47,7 +47,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <div class="max-w-full px-8 md:px-12 lg:px-32 mx-auto pb-32 pt-12 relative">
       <div class="grid grid-cols-1 gap-10 xl:gap-24">
         <div class="mx-auto">
-          <div
+          <div id="content"
             class="max-w-4xl prose p-4 dark:prose-blockquote:border-l-white prose-blockquote:border-l-slate-200 dark:prose-a:text-cyan-400/90 prose-a:text-cyan-600 dark:hover:prose-a:text-white hover:prose-a:text-vulcan-700 prose-headings:font-normal dark:prose-headings:text-white prose-headings:text-vulcan-700 prose-li:marker:text-cyan-500 dark:text-slate-400 text-gray-600 dark:prose-code:text-white prose-code:vulcan-700 prose-blockquote:text-white/70"
           >
             <slot />
