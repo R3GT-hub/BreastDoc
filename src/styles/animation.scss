@@ -44,7 +44,7 @@ $color-indigo-shade: hsl(205, 100%, 46%);
   width: 100%;
   top: -10px;
   left: -10px;
-  border: solid 10px var(--borderColor);
+  border: solid 10px rgb(242, 86, 112);
   border-radius: 50%;
 }
 
@@ -56,7 +56,7 @@ $color-indigo-shade: hsl(205, 100%, 46%);
   width: calc(100% + 20px);
   top: -20px;
   left: -20px;
-  border: solid 10px var(--ringColor);
+  border: solid 10px rgb(230, 38, 134);
   border-radius: 50%;
 }
 
@@ -93,8 +93,8 @@ $color-indigo-shade: hsl(205, 100%, 46%);
   display: block;
   height: 40px;
   width: 40px;
-  border: solid 10px var(--borderColor);
-  background-color: $dotColor;
+  border: solid 10px red;
+  background-color: red;
   border-radius: 50%;
 }
 
@@ -184,7 +184,7 @@ $color-indigo-shade: hsl(205, 100%, 46%);
   height: 40px;
   width: 40px;
   border: solid 10px ;
-  background-color: $dotColor;
+  background-color: red;
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
@@ -222,8 +222,8 @@ $color-indigo-shade: hsl(205, 100%, 46%);
   display: block;
   height: 40px;
   width: 40px;
-  border: solid 10px var(--borderColor);
-  background-color: $dotColor;
+  border: solid 10px rgb(247, 151, 151);
+  background-color:rgb(246, 86, 86);
   border-radius: 50%;
   background-image: url(attr(data-image)); // Load image from data-image attribute
   background-size: cover; // Adjust the background size as needed

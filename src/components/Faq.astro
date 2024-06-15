@@ -1,0 +1,72 @@
+---
+const questions = [
+  "What is BreastDoc?",
+  "How can I join the community?",
+  "What resources are available?",
+  "How can I get personalized treatment information?",
+  "Who are the doctors in the community?",
+  "How do I get support from survivors?",
+  "What stages of breast cancer does BreastDoc cover?",
+];
+
+const answers = [
+  "BreastDoc is a supportive community where breast cancer survivors and doctors unite to provide guidance and support.",
+  "You can join the community by signing up on our website and filling out your profile information.",
+  "We offer a variety of resources including articles, videos, and support groups to help you through your breast cancer journey.",
+  "By providing details about your current stage of breast cancer, you can receive personalized treatment information tailored to your needs.",
+  "The doctors in our community are experienced oncologists and specialists who volunteer their time to support our members.",
+  "Survivors offer support through forums, group chats, and one-on-one mentorship to help you navigate your journey.",
+  "BreastDoc provides information and support for all stages of breast cancer, from diagnosis to post-treatment care.",
+];
+---
+
+<div class="frjcic faq-container" id="faq">
+  <h1 class="faq-title text-transparent bg-clip-text font-medium tracking-widest bg-gradient-to-r from-pink-700 via-pink-500 to-indigo-700 dark:from-cyan-400 dark:via-teal-500 dark:to-indigo-500 text-s uppercase">Frequently Asked Questions</h1>
+  <div class="faq-content">
+    {questions.map((question, index) => (
+      <div key={index} class="faq-item">
+        <div class="faq-question" onClick={() => toggleQuestion(index)}>
+          {question}
+        </div>
+        <div id={`answer-${index}`} class="faq-answer hidden">{answers[index]}</div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  function toggleQuestion(index) {
+    const answerElement = document.getElementById(`answer-${index}`);
+    if (answerElement) {
+      answerElement.classList.toggle('hidden');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach((question, index) => {
+      question.addEventListener('click', () => toggleQuestion(index));
+    });
+  });
+</script>
+
+<style>
+  .hidden {
+    display: none;
+  }
+
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-answer {
+    padding-left: 1rem;
+    border-left: 2px solid #ccc;
+  }
+</style>

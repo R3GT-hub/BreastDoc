@@ -1,0 +1,20 @@
+---
+import Questionnaire from "../components/Questionnaire.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<AstroSeo
+  title="Questionnaire"
+  description="Breast Cancer Awareness Questionnaire"
+  canonical="https://omnigres.com/questionnaire"
+  twitter={{
+    handle: "@Omnigres",
+    site: "@omnigres",
+    cardType: "summary_large_image",
+  }}
+/>
+
+<BaseLayout>
+  <Questionnaire />
+</BaseLayout>
