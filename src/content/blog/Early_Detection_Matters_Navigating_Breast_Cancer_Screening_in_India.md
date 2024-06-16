@@ -46,5 +46,5 @@ Even for those women who have excellent lifestyles and do not have any family hi
 ## Conclusion
 
 Navigating breast cancer screening in India is crucial for early detection and effective treatment. Regular mammograms, especially for women over 40, play a pivotal role in identifying breast cancer at its earliest stages. While there are potential drawbacks, such as false positives, the benefits of early detection far outweigh the risks. For personalized advice and screening schedules, consulting with healthcare providers is essential. Max Healthcare offers comprehensive breast cancer screening services, ensuring that you receive the best possible care tailored to your needs.
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0ENy0t7rTQw?si=jye6ib9TO8KyffeW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
