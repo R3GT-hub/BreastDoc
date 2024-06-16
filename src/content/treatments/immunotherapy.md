@@ -45,3 +45,4 @@ heroImage: "https://assets.newatlas.com/dims4/default/03e529f/2147483647/strip/t
 - High for eligible patients who respond well to immunotherapy, with the potential for long-term survival and improved quality of life.
 - Often covered by insurance, although coverage may vary based on the specific drug and treatment setting.
 - Continued research and development in immunotherapy are expanding its applications and improving outcomes for cancer patients.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dFGRveYPmbc?si=VliLKximVKQPvRgm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

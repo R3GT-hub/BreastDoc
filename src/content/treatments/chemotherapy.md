@@ -58,3 +58,4 @@ heroImage: "https://images.everydayhealth.com/images/cancer/what-is-chemotherapy
 - Improved quality of life and symptom management in advanced cancer stages.
 - The potential for long-term remission or cure in certain cancer types.
 - Reduced healthcare costs in the long run by preventing cancer progression and related complications.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MUiVDggkzZM?si=3DQjqrW52N1EUwRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -42,3 +42,4 @@ heroImage: "https://www.iaea.org/sites/default/files/styles/original_image_size/
 - High return on investment due to its effectiveness in preventing cancer recurrence and improving survival rates.
 - Often covered by insurance, although coverage may vary based on the specific treatment plan and insurance provider.
 - Advances in technology continue to improve the precision and effectiveness of radiation therapy while minimizing side effects.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nyGROC2dpqg?si=GqHycFeF_XsC5xV5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

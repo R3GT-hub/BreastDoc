@@ -44,3 +44,4 @@ Ongoing research in targeted therapy focuses on:
 ## Conclusion
 
 Targeted therapy has revolutionized cancer treatment by offering a more precise and personalized approach. By understanding the molecular drivers of cancer, targeted therapy has the potential to improve outcomes and quality of life for many cancer patients.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ssljlzTFk_M?si=i-zMU_QOwsQ2JNV5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
