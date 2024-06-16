@@ -10,36 +10,34 @@ heroImage: "https://media.istockphoto.com/id/1215880332/photo/a-surgeons-team-in
 
 **Pros:**
 
-- Immediate removal of cancerous tissue.
-- Can be curative for early-stage breast cancer.
+- Immediate removal of cancerous tissue, potentially curative for early-stage breast cancer.
+- Can be combined with other treatments like radiation therapy for better outcomes.
 
 **Cons:**
 
-- Physical and emotional impact of losing part or all of a breast.
-- Possible complications such as infection or lymphedema.
+- Physical and emotional impact of losing part or all of a breast, which can affect body image and self-esteem.
+- Possible complications such as infection, bleeding, or lymphedema (swelling due to lymph fluid buildup).
 
 ## Short and Long Term Effects
 
 **Short Term:**
 
-- Pain and swelling.
-- Risk of infection.
+- Pain and swelling immediately after surgery, which usually improve with time and medication.
+- Risk of infection at the surgical site, which is typically managed with antibiotics.
 
 **Long Term:**
 
-- Potential changes in body image and self-esteem.
-- Risk of lymphedema (swelling due to lymph fluid buildup).
+- Potential changes in body image and self-esteem, especially with mastectomy.
+- Risk of lymphedema, particularly after lymph node removal during surgery.
 
-##
-
-Cost and Return on Investment
+## Cost and Return on Investment
 
 **Cost:**
 
-- Varies widely based on the type of surgery and healthcare system.
-- Average cost: $10,000 to $50,000.
+- Varies widely based on the type of surgery, hospital fees, and healthcare system.
+- Average cost ranges from $10,000 to $50,000, including pre-operative assessments, surgery, hospital stay, and post-operative care.
 
 **Return on Investment:**
 
-- High, as it can be a life-saving procedure.
-- Potentially reduces the need for further treatments if cancer is fully removed.
+- High return on investment as surgery can be a life-saving procedure, especially for early-stage breast cancer.
+- Reduces the need for further treatments if cancer is fully removed during surgery.
